@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #05ee09;
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: coral;
+  transition: 0.3s;
+  font-family: "Audiowide", Static;
+}
+nav .logo a:hover {
+  color: teal;
+}
+
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+nav .checkbox i {
+  font-size: 2rem;
+  color: #a855f7;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: #060606;
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: #ca8a04;
+  border-bottom-color: #ca8a04;
+  color: #ca8a04;
+}
+
+/* INDEX */
+
+.section {
+  /* background-color: var(--extra-light); */
+  background-image: url(/../img/background.jpeg);
+}
+
+.section__container {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: #060606;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: #060606;
+  margin-bottom: 1rem;
+  font-family: "Audiowide", Static;
+}
+
+.title span {
+  font-weight: 600;
+  color: teal;
+}
+
+.description {
+  line-height: 1.5rem;
+  color: #373a40;
+  margin-bottom: 2rem;
+}
+
+.about__btn {
+  display: flex;
+  gap: 1rem;
+}
+
+.about__btn a {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.about__me {
+  background-color: teal;
+  color: #ffffff;
+}
+
+.about__me:hover {
+  background-color: coral;
+}
+
+/* ABOUT  */
+.about_description {
+  line-height: 1.5rem;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.about_subtitle {
+  font-family: "Audiowide", Static;
+}
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.image img {
+  width: min(25rem, 90%);
+  border-radius: 100%;
+}
+
+/* CONTACT */
+
+.contact_subtitle {
+  font-family: "Audiowide", Static;
+}
+
+.social-icons {
+  /* display: inline-flex; */
+  font-size: 20px;
+}
+.social-icons a {
+  color: #101010;
+  margin: 10px 10px;
+  transition: 0.2s;
+  /* width: 100%; */
+}
+
+.social-icons a :hover {
+  color: #a855f7;
+}
